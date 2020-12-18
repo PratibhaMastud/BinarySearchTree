@@ -23,6 +23,9 @@ namespace BinarySearchTree
             bST.Insert(70);
             bST.GetSize();
             bST.Display();
+            bool result = bST.IfExist(67, bST);
+            Console.WriteLine(result);
+
 
         }
     }
