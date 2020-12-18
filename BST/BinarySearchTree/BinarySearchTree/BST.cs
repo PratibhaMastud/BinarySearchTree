@@ -16,7 +16,7 @@ namespace BinarySearchTree
             this.RightTree = null;
         }
 
-        int LeftCount = 0, RightCount = 0;
+        public int LeftCount = 0, RightCount = 0;
         bool result = false;
 
         public void Insert(T item)
@@ -36,6 +36,14 @@ namespace BinarySearchTree
                 else
                     this.RightTree.Insert(item);
             }
+        }
+
+        /// <summary>
+        /// Get size of Binary Search Tree
+        /// </summary>
+        public void GetSize()
+        {
+            Console.WriteLine("\nSize " + (1 + this.LeftCount + this.RightCount));
         }
 
         public void Display()
